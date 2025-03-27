@@ -1,0 +1,21 @@
+tupla_vacia = ()
+tupla_numeros = (1, 2, 3, 4, 5, 6)
+tupla_texto = ('jose', 'angelica', 'mario')
+tupla_mixta = (45, 'juan', True, 3.2)
+tupla_anidada = (4, 2, (56, 8), 6, 9, (2, 3))
+tupla_un_elemento = (2,)
+tupla_inmutable = (1, 2, 3)
+
+tupla_valores = (10, 20, 30)
+a, b, c = tupla_valores
+
+print(tupla_vacia)
+print(tupla_numeros)
+print(tupla_texto)
+print(tupla_mixta)
+print(tupla_anidada)
+print(tupla_un_elemento)
+print(tupla_anidada[2][1])
+print(a)
+print(b)
+print(c)
