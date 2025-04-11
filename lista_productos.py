@@ -1,4 +1,6 @@
 
+total_productos = 0
+total_carrito = 0
 productos = [{'nombre' : 'manzana', 'descripcion' : 'cultivada en la playa de tenacatita', 'precio':3},
                       {'nombre' : 'pera', 'descripcion' : 'cultivada en la playa de puerto vallarta', 'precio':2.5},
                       {'nombre' : 'zanahoria', 'descripcion' : 'cultivada en la playa de puerto peñasco', 'precio':1.5},
@@ -22,14 +24,28 @@ while True:
             productos[id_producto]['cantidad'] = 1
             carrito.append(productos[id_producto])
 
-        total = 0
         print(f'\nProductos en el carrito actualmente: ' )
+        total_productos = 0
+        total_carrito = 0
         for index, producto in enumerate(carrito):
             print( f'Producto: {producto['nombre'].upper()}, Precio: ${producto['precio']}, Cantidad: {producto['cantidad']}')
+            cantidad = int(producto['cantidad'])
+            total_productos += cantidad
+            total_carrito = total_carrito + producto['precio'] * producto['cantidad']
+        print(f'La cantidad de productos es {total_productos}')
+        print(f'El total del carrito es ${total_carrito}')
+
     else:
         break
 
 #linea final
 print(f'\nProductos en el carrito :' )
+total_productos = 0
+total_carrito = 0
 for index, producto in enumerate(carrito):
     print( f'Producto: {producto['nombre'].upper()}, Precio: ${producto['precio']}, Cantidad: {producto['cantidad']}')
+    cantidad = int(producto['cantidad'])
+    total_productos += cantidad
+    total_carrito = total_carrito + producto['precio'] * producto['cantidad']
+print(f'La cantidad de productos es {total_productos}')
+print(f'El total del carrito es ${total_carrito}')
