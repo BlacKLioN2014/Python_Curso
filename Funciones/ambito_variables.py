@@ -24,4 +24,10 @@ restar()
 contador_global = 0
 
 def incrementar_contador():
-    #Utilizar la palabra clave gloval para modificar la variable global
+    #Utilizar la palabra clave global para modificar la variable global
+    global contador_global
+    contador_global +=1
+    print("Contador dentro de la función: ", contador_global)
+
+incrementar_contador()
+incrementar_contador()
