@@ -276,3 +276,51 @@
 #     json.dump(datos_, archivo_json, indent=4, ensure_ascii=False)
 
 
+# import os
+# # Carpeta actual
+# print("\n\nCarpeta actual:", os.getcwd())
+# # Uniendo rutas de forma segura
+# ruta = os.path.join("C:\\", "Users", "abraham.jimenez", "escritorio", "archiv.txt")
+# print("Ruta construida:", ruta)
+
+
+import os
+# # Crear carpeta
+# os.makedirs("Escritorio\\Carpetachuky", exist_ok=True)
+# print("Carpeta creada")
+# Eliminar carpeta vacía
+# os.rmdir("Escritorio\\Carpetachuky")
+# os.rmdir("Escritorio")
+# print("Carpeta eliminada")
+
+
+# import os
+# # archivos = os.listdir(".")  # "." = carpeta actual
+# archivos = os.listdir("C:\\Users\\abraham.jimenez\\Desktop\\Python_Curso")  # "." = carpeta actual
+# print("Archivos en esta carpeta:")
+# for archivo in archivos:
+#     print("-", archivo)
+
+
+import shutil
+# # ruta donde crees que está
+# ruta = r"C:\Users\abraham.jimenez\Desktop\Python_Curso\caca.txt"
+# print("Existe?", os.path.exists(ruta))
+# # Copiar archivo
+# shutil.copy(r"C:\Users\abraham.jimenez\Desktop\Python_Curso\caca.txt", r"C:\Users\abraham.jimenez\Desktop\caca.txt")
+# # Mover archivo
+# shutil.move(r"C:\Users\abraham.jimenez\Desktop\Python_Curso\coco.txt", r"C:\Users\abraham.jimenez\Desktop\coco.txt")
+
+
+# os.remove() → borra solo archivos.
+# os.rmdir() → borra carpetas vacías.
+# shutil.rmtree() → borra carpetas con todo adentro.
+# import os
+# # Eliminar archivo
+# os.remove(r"C:\Users\abraham.jimenez\Desktop\coco.txt")
+# print("Archivo eliminado")
+# import shutil
+# shutil.rmtree(r"C:\Users\abraham.jimenez\Desktop\Fresh")
+# print("Carpeta y archivos eliminados")
+
+
