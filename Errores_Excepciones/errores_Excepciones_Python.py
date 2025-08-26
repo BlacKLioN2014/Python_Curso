@@ -302,13 +302,13 @@ import os
 #     print("-", archivo)
 
 
-import shutil
-# # ruta donde crees que está
+# import shutil
+# ruta donde crees que está
 # ruta = r"C:\Users\abraham.jimenez\Desktop\Python_Curso\caca.txt"
 # print("Existe?", os.path.exists(ruta))
-# # Copiar archivo
+# Copiar archivo
 # shutil.copy(r"C:\Users\abraham.jimenez\Desktop\Python_Curso\caca.txt", r"C:\Users\abraham.jimenez\Desktop\caca.txt")
-# # Mover archivo
+# Mover archivo
 # shutil.move(r"C:\Users\abraham.jimenez\Desktop\Python_Curso\coco.txt", r"C:\Users\abraham.jimenez\Desktop\coco.txt")
 
 
@@ -324,3 +324,69 @@ import shutil
 # print("Carpeta y archivos eliminados")
 
 
+# def dividir(a, b):
+#     assert b != 0, "El divisor no puede ser cero"
+#     return a / b
+# print(dividir(10, 0))  # ❌ AssertionError
+
+
+# import logging
+# logging.basicConfig(level=logging.DEBUG)
+# logging.debug("Este es un mensaje de depuración")
+# logging.info("El programa está corriendo")
+# logging.warning("Advertencia")
+# logging.error("Ocurrió un error")
+# logging.critical("Fallo crítico")
+
+
+# import pdb
+# def suma(a, b):
+#     pdb.set_trace()  # Aquí se pausa la ejecución
+#     return a + b
+# print(suma(3, 5))
+
+
+# import requests
+# from bs4 import BeautifulSoup
+# import csv
+# # Descargar página
+# url = "https://www.youtube.com/watch?v=3_LFIlwNqOA"
+# respuesta = requests.get(url)
+# html = respuesta.text
+# print(respuesta)
+# print(html)
+# with open("C:\\Users\\abraham.jimenez\\Desktop\\ejemplo.txt", "w", newline="", encoding="utf-8") as archivo:
+#     archivo.write(html)
+# Parsear HTML
+# sopa = BeautifulSoup(html, "html.parser")
+# Extraer todos los enlaces
+# enlaces = sopa.find_all("div")
+# for enlace in enlaces:
+#     print(enlace)
+# for enlace in enlaces:
+#     print(enlace.get("href"))
+# with open("C:\\Users\\abraham.jimenez\\Desktop\\galleta.txt", "w") as archivo:  # "w" = sobrescribir
+#     # archivo.write("Hola, Abraham\n")
+#     # archivo.write("Aprendiendo Python con todo \n")
+#     archivo.write("Hola, pepe\n")
+#     archivo.write("Como te va \n")
+
+
+# import requests
+# from bs4 import BeautifulSoup
+# # 1️⃣ Descargar la página
+# url = "https://www.chedraui.com.mx/"
+# respuesta = requests.get(url)
+# html = respuesta.text
+# # 2️⃣ Parsear el HTML
+# sopa = BeautifulSoup(html, "html.parser")
+# # 3️⃣ Buscar todas las etiquetas <a>
+# enlaces_obj = sopa.find_all("input")
+# for enlace in enlaces_obj:
+#     print(enlace)
+# # # 4️⃣ Extraer solo los href y guardarlos en una lista
+# # urls = [enlace.get("href") for enlace in enlaces_obj if enlace.get("href")]
+# # # 5️⃣ Mostrar resultados
+# # print("Lista de URLs encontradas:")
+# # for u in urls:
+# #     print(u)
